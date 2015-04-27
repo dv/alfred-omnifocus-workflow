@@ -8,25 +8,25 @@ Selecting a project to create your task in:
 
 ![Selecting a project to create your task in](/screenshots/project_select.png?raw=true "Selecting a project to create your task in")
 
-Similarly, selecting a context:
+An example of the autocomplete feature for projects:
 
-![Selecting a context to create your task in](/screenshots/context_select.png?raw=true "Selecting a context to create your task in")
+![Autocompleting projects](/screenshots/project_autocomplete.png?raw=true "Autocompleting projects")
 
-Lastly, an example of the autocomplete feature:
+Lastly, an example of the autocomplete feature for contexts:
 
-![Selecting a context to create your task in](/screenshots/context_autocomplete.png?raw=true "Selecting a context to create your task in")
+![Autocompleting contexts](/screenshots/context_autocomplete.png?raw=true "Autocompleting contexts")
 
 
 ## Usage
 
-In Alfred, start typing `todo` and then the task you want to add. The workflow will give you the option to add the task to a project. You can also manually add the task to a project by typing `:` or `::` and then the name of the project. Add a context by typing `@` and the name of a context. 
+In Alfred, start typing `todo` and then the task you want to add. The workflow will give you the option to add the task to a project. You can also manually add the task to a project by typing `:` or `::` and then the name of the project. Add a context by typing `@` and the name of a context.
 
 I'll defer to [Brandon Pittman](http://pixelsnatch.com/omnifocus/) for a thorough explanation:
 
 > It’s a format that OmniFocus uses to parse task information like so:
-> 
+>
 > `Do something! @home ::misc #5pm #tomrrow //This is a note`
-> 
+>
 > The `!` makes `Do something` a flagged task. `@home` sets the context to “home”. `::` is used for matching a project. Both `@` and `::` will fuzzy match existing contexts and projects. The first `#` is used for a defer date, while the second `#` is for a due date. Both support natural language parsing like the inspector in OmniFocus. Word of caution though, if only one `#` is present, OmniFocus assumes it’s a due date. Lastly, `//` starts the note for a task.
 
 
@@ -49,7 +49,7 @@ Then install the bundled gems:
 And install the workflow:
 
     rake install
-    
+
 ## Tests
 
 Yes, I did build tests for my Alfred workflow. TDD all the way!
