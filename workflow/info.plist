@@ -69,7 +69,7 @@
 				<key>runningsubtext</key>
 				<string>Loading data...</string>
 				<key>script</key>
-				<string>/usr/bin/ruby ./main.rb {query}</string>
+				<string>/usr/bin/ruby ./main.rb "{query}"</string>
 				<key>subtext</key>
 				<string>Flag! @Context ::Project (#Start #Due) $Duration //Note</string>
 				<key>title</key>
