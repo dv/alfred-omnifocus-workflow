@@ -23,7 +23,7 @@ Alfred.with_friendly_error do |alfred|
   task_generator.contexts = omnifocus.contexts
 
   tasks = task_generator.tasks
-  tasks.push(tasks.shift)
+  tasks.push(tasks.shift)       # Last task is always shown first
 
   tasks.each do |task|
     command = task.to_s
