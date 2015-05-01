@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
@@ -143,22 +143,21 @@
 			<dict>
 				<key>applescript</key>
 				<string>on alfred_script(q)
-					set theName to (q)
-					set isRunning to false
-				
-					tell application &quot;System Events&quot;
-						if not (exists process &quot;OmniFocus&quot;) then
-							tell application &quot;OmniFocus&quot; to activate
-						end if
-					end tell
-				
-					tell application &quot;OmniFocus&quot;
-						parse tasks into default document with transport text q
-					end tell
-					
-				end alfred_script</string>
+
+	tell application "System Events"
+    	if not (exists process "OmniFocus") then
+        	tell application "OmniFocus" to activate
+     	end if
+    end tell
+
+	tell application "OmniFocus"
+		parse tasks into default document with transport text q
+	end tell
+
+end alfred_script
+</string>
 				<key>cachescript</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.applescript</string>
@@ -175,22 +174,22 @@
 		<key>21557827-8003-42B7-A042-16D4C9278FEC</key>
 		<dict>
 			<key>ypos</key>
-			<real>140.0</real>
+			<real>140</real>
 		</dict>
 		<key>42D05639-3F0F-4760-8214-317167E4173D</key>
 		<dict>
 			<key>ypos</key>
-			<real>140.0</real>
+			<real>140</real>
 		</dict>
 		<key>750C5376-E51D-4699-8753-038A9A9FDF35</key>
 		<dict>
 			<key>ypos</key>
-			<real>140.0</real>
+			<real>140</real>
 		</dict>
 		<key>FE4D9151-BABE-4E68-95B6-773F6BEF95B5</key>
 		<dict>
 			<key>ypos</key>
-			<real>290.0</real>
+			<real>250</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
