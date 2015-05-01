@@ -121,4 +121,13 @@ RSpec.describe Task do
     end
 
   end
+
+  describe "examples" do
+    it "passes tasks without project or contexts straight through" do
+      task = Task.new("Get milk #tonight")
+
+      expect(task.to_s).to eq("Get milk #tonight")
+    end
+  end
+
 end
