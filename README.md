@@ -2,6 +2,10 @@
 
 A workflow for Alfred 2 to create Tasks quickly. It will give you a list of possible projects or contexts to add to, and try to autocomplete what you've already typed.
 
+Quick install: [download the alfred workflow binary](/omnifocus.alfredworkflow?raw=true). You probably need to install `bundler` too:
+
+    sudo gem install bundler
+
 ## Screenshots
 
 Selecting a project to create your task in:
